@@ -1,3 +1,15 @@
+# 集群说明
+
+**机器节点**
+
+| 服务器名      | ip           | 安装的组件           |
+| ------------- | ------------- |-------------|
+| node-1      | 192.168.100.101 |kubernetes_master，kubernetes_client，flannel，etcd|
+| node-2      | 192.168.100.102 |kubernetes_node，flannel，docker|
+| node-3      | 192.168.100.103 |kubernetes_node，flannel，docker|
+| ···      | ··· |kubernetes_node，flannel，docker|
+| node-n      | 192.168.100.10n |kubernetes_node，flannel，docker|
+
 # 使用说明
 1、修改Vagrantfile中vm_num变量的数据值，改变量决定了集群中的节点数
 ``` bash
