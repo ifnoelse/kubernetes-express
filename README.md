@@ -49,3 +49,14 @@ kubectl create -f heapster/
 cd /vagrant kubernetes/ingress
 kubectl create -f nginx-ingress-controller.yaml
 ```
+
+# 访问服务
+
+1、访问dashboard
+
+地址：http://192.168.100.101:8080/ui
+
+
+2、访问grafna
+
+地址：http://192.168.100.101:8080/api/v1/namespaces/kube-system/services/monitoring-grafana/proxy
