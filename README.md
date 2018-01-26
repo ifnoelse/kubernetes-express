@@ -42,28 +42,28 @@ kubectl get node
 1、安装dashbord
 
 ``` bash
-cd /vagrant kubernetes
+cd /vagrant/kubernetes
 kubectl create -f dashboard/
 ```
 
 2、安装dns
 
 ``` bash
-cd /vagrant kubernetes
+cd /vagrant/kubernetes
 kubectl create -f dns/
 ```
 
 3、安装heapster
 
 ``` bash
-cd /vagrant kubernetes 
+cd /vagrant/kubernetes 
 kubectl create -f heapster/
 ```
 
 4、安装 nginx-ingress-controller.yaml
 
 ``` bash
-cd /vagrant kubernetes/ingress
+cd /vagrant/kubernetes/ingress
 kubectl create -f nginx-ingress-controller.yaml
 ```
 
