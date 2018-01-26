@@ -49,9 +49,9 @@ Vagrant.configure("2") do |config|
         groupadd docker
         usermod -aG docker ifnoelse
         usermod -aG docker vagrant
-	    mkdir -p /etc/docker
-	    echo '{"registry-mirrors": ["https://d6at4uvr.mirror.aliyuncs.com"]}'> /etc/docker/daemon.json
-	    systemctl daemon-reload
+        mkdir -p /etc/docker
+        echo '{"registry-mirrors": ["https://d6at4uvr.mirror.aliyuncs.com"]}'> /etc/docker/daemon.json
+        systemctl daemon-reload
         systemctl restart docker
       SHELL
       # node.ssh.private_key_path = ".setting/private_key"
